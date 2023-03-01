@@ -4,9 +4,9 @@ import {Order} from "./order";
 import {OrderItem} from "./order-item";
 
 export class Purchase {
-  customer: Customer;
-  shippingAddress: Address;
-  billingAddress: Address;
-  order: Order;
-  orderItems: OrderItem[];
+  customer: Customer | undefined;
+  shippingAddress: Address | undefined;
+  billingAddress: Address | undefined;
+  order: Order | undefined;
+  orderItems: OrderItem[] | undefined;
 }
